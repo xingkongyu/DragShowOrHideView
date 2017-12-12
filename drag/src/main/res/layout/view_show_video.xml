@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:background="@android:color/white" />
 
-    <com.join51.gouganjue.smallvideo.ObservableScrollView
+    <com.cc.congdy.drag.ObservableScrollView
         android:id="@+id/sv_view"
         android:visibility="gone"
         android:layout_width="match_parent"
@@ -37,5 +37,5 @@
 
             </LinearLayout>
         </LinearLayout>
-    </com.join51.gouganjue.smallvideo.ObservableScrollView>
+    </com.cc.congdy.drag.ObservableScrollView>
 </FrameLayout>

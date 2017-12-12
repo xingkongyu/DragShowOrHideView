@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var gridview = findViewById<GridView>(R.id.grid_view)
-        gridview.adapter = getBaseAdapter()
-        gridview.onItemClickListener = AdapterView.OnItemClickListener { p0, p1, p2, p3 -> }
+//        var gridview = findViewById<GridView>(R.id.grid_view)
+//        gridview.adapter = getBaseAdapter()
+//        gridview.onItemClickListener = AdapterView.OnItemClickListener { p0, p1, p2, p3 -> }
     }
 
     private fun getBaseAdapter(): BaseAdapter? {
