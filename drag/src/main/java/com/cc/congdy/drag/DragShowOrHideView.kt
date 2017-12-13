@@ -67,6 +67,10 @@ open class DragShowOrHideView(context: Context, attributes: AttributeSet?) : Fra
         })
     }
 
+    fun setScrollViewOnTouchListener(l: OnTouchListener){
+        sv.setOnTouchListener(l)
+    }
+
     /**
      * 添加头部不做透明变化部分
      */
