@@ -383,7 +383,9 @@ open class DragShowOrHideView(context: Context, attributes: AttributeSet?) : Fra
      * 从点击位置进入展示界面
      */
     fun showfull(screenLocationModel: ScreenLocationModel) {
+        sv.scrollTo(0,0)
         this.screenLocationModel = screenLocationModel
+        visibility = View.VISIBLE
         sv.visibility = View.VISIBLE
         if (rectf == null) {
             //增加整体布局监听

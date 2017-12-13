@@ -9,10 +9,13 @@
     <GridView
         android:id="@+id/grid_view"
         android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <com.cc.congdy.drag.DragShowOrHideView
+        android:visibility="gone"
         android:id="@+id/dragview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
