@@ -67,8 +67,8 @@ open class DragShowOrHideView(context: Context, attributes: AttributeSet?) : Fra
         })
     }
 
-    fun setScrollViewOnTouchListener(l: OnTouchListener){
-        sv.setOnTouchListener(l)
+    fun setScrollViewOnScrollChangedListener(l: ObservableScrollView.OnScollChangedListener){
+        sv.setOnScollChangedListener(l)
     }
 
     /**

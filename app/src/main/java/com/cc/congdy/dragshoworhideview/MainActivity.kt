@@ -11,6 +11,8 @@ import android.widget.*
 import com.cc.congdy.drag.DragShowOrHideView
 import kotlinx.android.synthetic.main.activity_main.*
 import android.util.DisplayMetrics
+import android.util.Log
+import com.cc.congdy.drag.ObservableScrollView
 
 
 class MainActivity : AppCompatActivity() {
@@ -58,6 +60,11 @@ class MainActivity : AppCompatActivity() {
                 "\nthis is the dragshoworhideview content !!\n"
         dragview.addHeaderView(header)
                 .addContentView(content)
+                .setScrollViewOnScrollChangedListener(object :ObservableScrollView.OnScollChangedListener{
+                    override fun onScrollChanged(scrollView: ObservableScrollView, x: Int, y: Int, oldx: Int, oldy: Int) {
+                        Log.e("xxxx","========>>>>$y")
+                    }
+                })
     }
 
     override fun onBackPressed() {
