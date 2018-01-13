@@ -84,13 +84,14 @@ open class DragShowOrHideView(context: Context, attributes: AttributeSet?) : Fra
      * 添加头部不做透明变化部分
      * 宽度根据父布局宽度
      * 高度根据给定的比例设置
+     * @param scale 宽高比，高/款的float值
      */
-    fun addHeaderViewFull(view: View, width: Int, height: Int): DragShowOrHideView {
+    fun addHeaderViewFull(view: View, scale:Float): DragShowOrHideView {
         if (view == null) throw Exception("addHeaderView ->view is null,please check !!")
         ll_header.addView(view)
         var param = view!!.layoutParams
         param!!.width = width
-        param!!.height = height
+        param!!.height = (height/scale).toInt()
         view!!.layoutParams = param
         return this
     }
