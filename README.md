@@ -1,4 +1,5 @@
 控件名称：DragShowOrHideView
+简书地址：https://www.jianshu.com/p/4cacee25e3cf
 ---
 此控件使用kotlin进行开发的，如有看不懂的地方请联系我。
 
@@ -148,7 +149,14 @@
 
 
 
+简书：
+主页链接：https://www.jianshu.com/u/e3a39f0af864
 
+CSDN：
+主页链接：http://blog.csdn.net/xingkongyu_cc
+
+码云：
+主页链接：https://gitee.com/ccdy00/events
 
 作者信息：匆匆那年
 QQ：617909447
